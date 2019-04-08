@@ -1,9 +1,3 @@
-(function ($, window, document, undefined) {
-
-  'use strict';
-
-  $(function () {
-    // FastShell
-  });
-
-})(jQuery, window, document);
+(function(window, document, undefined) {
+  "use strict";
+})(window, document);

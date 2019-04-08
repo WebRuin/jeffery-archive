@@ -1,10 +1,70 @@
 .header {
+  height: 75px;
+  background-color: $blue;
+  display: flex;
+  align-items: center;
+  color: $white;
+  box-shadow: $bs;
+  h1 {
+    margin-left: 1rem;
+  }
+  nav {
+    margin-left: auto;
+    height: inherit;
+    ul {
+      margin: 0;
+      height: inherit;
+      justify-content: space-around;
+      list-style: none;
+      li {
+        height: inherit;
+        display: inline-block;
+        a {
+          height: inherit;
+          display: flex;
+          align-items: center;
+          color: $white;
+          font-size: 2rem;
+          padding: 0 1.5rem;
+          text-decoration: none;
+          &:hover {
+            color: $blue;
+            background-color: rgba($white, 0.75);
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(baby-bear) {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+    height: auto;
 
-}
-.logo {
-  margin: -58px 0 0 -100px;
-  @include position(absolute, 50% 0 0 50%);
-  img {
+    h1 {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+    }
 
+    nav {
+      margin: 0 auto;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          a {
+            font-size: 1rem;
+            padding: 1rem;
+            border-top: 1px dotted $white;
+            border-bottom: 1px dotted $white;
+            &:hover {
+              color: $blue;
+              background-color: rgba($white, 0.75);
+            }
+          }
+        }
+      }
+    }
   }
 }
