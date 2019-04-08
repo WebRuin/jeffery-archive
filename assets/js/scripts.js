@@ -4,14 +4,8 @@
  * https://HosseinKarami.github.io/fastshell
  * @author Hossein Karami
  * @version 1.0.5
- * Copyright 2016. MIT licensed.
+ * Copyright 2019. MIT licensed.
  */
-(function ($, window, document, undefined) {
-
-  'use strict';
-
-  $(function () {
-    // FastShell
-  });
-
-})(jQuery, window, document);
+(function(window, document, undefined) {
+  "use strict";
+})(window, document);
