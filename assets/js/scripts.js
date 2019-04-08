@@ -7,5 +7,5 @@
  * Copyright 2019. MIT licensed.
  */
 (function(window, document, undefined) {
-  "use strict";
+  'use strict';
 })(window, document);
